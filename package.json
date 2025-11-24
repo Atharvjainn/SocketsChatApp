@@ -1,0 +1,24 @@
+{
+  "name": "socketschatapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start" : "npx nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Atharvjainn/SocketsChatApp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Atharvjainn/SocketsChatApp/issues"
+  },
+  "homepage": "https://github.com/Atharvjainn/SocketsChatApp#readme",
+  "dependencies": {
+    "express": "^5.1.0",
+    "nodemon": "^3.1.11"
+  }
+}
