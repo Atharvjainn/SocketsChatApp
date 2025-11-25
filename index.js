@@ -15,9 +15,18 @@ const startUpServer = async() => {
     })
 
    io.on('connection',(socket) => {
-    setInterval(() => {
-        socket.emit("from_server")
-    }, 2000);
+
+    // socket.on('from_client',() => {
+    //     console.log("coming from client")
+    // })
+
+    socket.on('msg_send',(data) => {
+        console.log(data);
+        io.emit('msg_rcvd',data)
+    })
+    // setInterval(() => {
+    //     socket.emit("from_server")
+    // }, 2000);
    })
 
 }
