@@ -19,6 +19,7 @@
   "homepage": "https://github.com/Atharvjainn/SocketsChatApp#readme",
   "dependencies": {
     "express": "^5.1.0",
+    "mongoose": "^9.0.0",
     "nodemon": "^3.1.11",
     "socket.io": "^4.8.1"
   }

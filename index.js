@@ -1,7 +1,7 @@
 const express = require('express')
 const http = require('http')
 const socketio = require('socket.io')
-
+const connect = require('./config/database')
 const app = express()
 const server =  http.createServer(app)
 const io = socketio(server)
@@ -12,6 +12,8 @@ const startUpServer = async() => {
     
     server.listen(3000, async() => {
         console.log("server started")
+        await connect()
+        console.log('mongoose connected');
     })
 
    io.on('connection',(socket) => {
